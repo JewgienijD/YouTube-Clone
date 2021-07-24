@@ -1,0 +1,42 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas: 
+                         "header"
+                         "video video sidebar"
+                         "comments comments sidebar";
+}
+
+/* HEADER */
+.navigation-bar {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-area: header;
+    grid-template-rows: auto;
+    height: 56px;
+    padding: 0 16px;
+    justify-self: center;
+}
+
+#logo-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    height: 30px;
+    width: 90px;
+}
+
+#burger {
+    cursor: pointer;
+}
+
+#logo:hover {
+    cursor: pointer;
+}
+
+#search-area {
+    display: flex;
+    justify-content: center;
+}
+
