@@ -1,9 +1,9 @@
 body {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto 1fr;
     grid-template-areas: 
-                         "header"
+                         "header header header"
                          "video video sidebar"
                          "comments comments sidebar";
 }
@@ -14,29 +14,83 @@ body {
     grid-template-columns: 1fr 2fr 1fr;
     grid-area: header;
     grid-template-rows: auto;
+    align-items: center;
     height: 56px;
     padding: 0 16px;
-    justify-self: center;
 }
 
 #logo-area {
     display: flex;
     flex-direction: row;
     justify-content: start;
-    height: 30px;
+    height: 26px;
     width: 90px;
 }
 
-#burger {
-    cursor: pointer;
-}
-
-#logo:hover {
-    cursor: pointer;
+#burger{
+    margin-right: 10px;
 }
 
 #search-area {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: stretch;
+    height: 30px;
 }
+
+.form-wrapper {
+    display: flex;
+    border: solid 1px rgb(216, 208, 208);
+    width: 90%;
+}
+
+.search-form {
+    border: none;
+    width: 100%;
+}
+
+#search-logo {
+    display: flex;
+    padding-left: 10px;
+    margin-right: 0;
+    width: 50px;
+    align-items: center;
+    background-color: rgb(245, 240, 240);
+    border-left: solid 1px rgb(216, 208, 208);
+}
+
+#voice{
+    height: 24px;
+    width: 24px;
+}
+
+#menu-area {
+    display: flex;
+    justify-content: flex-end;
+    height: 30px;
+}
+
+.header-icons {
+    height: 23px;
+    width: 26px;
+    margin-right: 25px;
+}
+
+#account {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-self: flex-end;
+}
+
+#logo,
+#burger,
+#voice,
+.header-icons:hover {
+    cursor: pointer;
+}
+
+
+
+
 
