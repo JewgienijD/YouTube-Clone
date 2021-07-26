@@ -22,6 +22,7 @@ body {
     top: 0;
     padding: 0 16px;
     position: fixed;
+    z-index: 999;
     width: 100%;
 }
 
@@ -104,7 +105,7 @@ body {
     grid-area: video;
     grid-template-columns: 1fr;
     margin-left: 6%;
-    margin-top: 15px;
+    margin-top: 50px;
 }
 
 #video-player {
@@ -221,11 +222,85 @@ body {
  #subscribe,
  #show-more:hover {
      cursor: pointer;
- }
+}
 
- /*COMMENTS AREA*/
- .comments {
-    background-color: rgb(249,249,249);
+/* SIDEBAR AREA*/
+.sidebar {
+    display: grid;
+    grid-area: sidebar;
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 50px;
+}
+
+.sidebar-buttons {
+    height: 3em;
+}
+
+.sidebar-buttons button {
+    border-radius: 16px;
+    padding: 5px 14px;
+    color: #030303;
+    font-size: 14px;
+    background-color: rgb(238,238,238);
+    border:solid 1px grey;
+}
+
+.sidebar-buttons button:hover {
+    background-color: rgb(223, 223, 223);
+    cursor: pointer;
+}
+
+#all {
+    background-color: black;
+    color: white;
+}
+
+#all:hover {
+    background-color: rgb(148, 144, 144);
+}
+
+.related-video-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.related-video {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+    margin-top: 5px;
+    position: relative;
+}
+
+.rel-video-description {
+    margin-left: 5px;
+}
+
+#rel-video-title {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#chanel-title {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: #747272;
+    font-size: 14px;
+}
+
+#chanel-stat {
+    margin-top: 0px;
+    color: #747272;
+    font-size: 14px;
+}
+
+
+
+
+
+/*COMMENTS AREA*/
+.comments {
     display: grid;
     grid-area: comments;
     grid-template-columns: 1fr;
