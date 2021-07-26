@@ -29,15 +29,63 @@
             <img src="icons/account.PNG" id="account" class="header-icons" alt="account image">
         </div>
     </header>
-
-    <section>
-        <div class="video"><p>VIDEO</p></div>
+    
+    <!--VIDEO AREA-->
+    <section class="video">
+        <div class="main-video">
+            <iframe id="video-player" src="https://www.youtube.com/embed/vHmUVQKXlVo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video-info">
+            <p id="video-tags">#HTML #HTMLTags #Edureka</p>
+            <p id="video-title">HTML vs HTML5 | Difference between HTML and HTML5 | HTML Tutorial | Edureka</p>
+            <div id="bottom-info">
+                <p id="left-bottom-info">
+                   <span>85,260 views · 13 Nov 2018 </span>
+                </p>
+                <p id="right-bottom-info">
+                    <img src="icons/like.PNG">
+                    <img src="icons/dislike.PNG">
+                    <img src="icons/share.PNG">
+                    <img src="icons/save.PNG">
+                    <img src="icons/more.PNG">                    
+                </p>
+            </div>
+            <div class="video-description">
+                <div id="video-top-description">
+                    <span id="left-description">
+                       <img id="chanel-logo"src="icons/logo-channel.PNG" alt="chanel-logo">
+                       <span id="chanel-info">
+                           <p id="chanel-name">edureka!</p>
+                           <p id="chanel-subscribes">2.78M subscribers</p>
+                        </span>
+                    </span>
+                    <span id="right-button">
+                        <button id="subscribe">SUBSCRIBE</button>
+                    </span>
+                </div>
+                <div id="video-bottom-description">
+                    <p id="text-description">🔥This Edureka video on "HTML vs HTML5" will provide you with a detailed and comprehensive knowledge about the differences between HTML and HTML5</p>
+                    <p id="show-more">SHOW MORE</p>
+                </div>                                
+            </div>
+        </div>
     </section>
+    
+    <!--SIDEBAR AREA-->
     <section>
         <div class="sidebar"><p>SIDEBAR</p></div>
     </section>
-    <section>
-        <div class="comments"><p>COMMENTS</p></div>
+    
+    <!--COMMENTS AREA-->
+    <section class="comments">
+        <div class="comments-sort">
+            <span id="comments-quantity">15 Comments</span>
+            <img id="sort-icon" src="icons/sort.PNG" alt="sort-image">
+        </div>
+        <div class="comments-add">
+            <img class="account-image" src="icons/acc_1.PNG">                   
+            <input id="comments-search" type="text" placeholder="Commenting publically">
+        </div>
     </section>
 </body>
 
