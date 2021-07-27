@@ -33,6 +33,7 @@ body {
     height: 26px;
     width: 90px;
     min-width: 90px;
+    margin-left: 5px;
 }
 
 #burger{
@@ -42,14 +43,15 @@ body {
 #search-area {
     display: flex;
     flex-direction: row;
-    justify-content: stretch;
+    justify-content: center;
     height: 30px;
 }
 
 .form-wrapper {
     display: flex;
     border: solid 1px rgb(216, 208, 208);
-    width: 90%;
+    width: 100%;
+    justify-self: center;   
 }
 
 .search-form {
@@ -59,7 +61,7 @@ body {
 
 #search-logo {
     display: flex;
-    padding-left: 10px;
+    padding-left: 20px;
     margin-right: 0;
     width: 50px;
     align-items: center;
@@ -70,6 +72,7 @@ body {
 #voice{
     height: 24px;
     width: 24px;
+    margin-right: 40px;
 }
 
 #menu-area {
@@ -77,11 +80,11 @@ body {
     justify-content: flex-end;
     height: 30px;
     padding-right: 20px;
+    margin-right: 25px;
 }
 
 .header-icons {
     height: 24px;
-    width: 24px;
     margin-right: 25px;
 }
 
@@ -296,9 +299,6 @@ body {
 }
 
 
-
-
-
 /*COMMENTS AREA*/
 .comments {
     display: grid;
@@ -386,7 +386,7 @@ body {
 
 /* MEDIA QUERIES*/
 @media only screen and (max-width: 992px){
-    body{
+    body {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
@@ -395,7 +395,34 @@ body {
                      "video"
                      "sidebar"
                      "comments";
+        margin-right: 3em;
     }
+
+    .navigation-bar {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #voice {
+        margin-right: 15px;
+    }
+
+    #logo-area {
+        margin-left: 15px;
+    }
+
+    .header-icons {
+        margin-right: 5px;
+    }
+
+    #menu-area {
+        margin-right: 40px;
+    }
+
+    #search-logo {
+        padding-left: 0.5em;
+    }
+  
 }
 
 
